@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Koza</title>
+<style>
+  body { font-family: -apple-system, 'Inter', sans-serif; max-width: 760px; margin: 40px auto; padding: 0 24px; line-height: 1.7; color: #2D2A26; background: #FFF8F0; }
+  nav { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #F0E6D8; font-size: 14px; }
+  nav a { color: #E8836B; text-decoration: none; margin-right: 16px; }
+  nav a:hover { text-decoration: underline; }
+  h1 { font-size: 32px; margin-bottom: 8px; color: #2D2A26; }
+  h2 { font-size: 22px; margin-top: 40px; margin-bottom: 12px; color: #2D2A26; }
+  h3 { font-size: 17px; margin-top: 24px; margin-bottom: 8px; color: #2D2A26; }
+  .subtitle { color: #8A8580; font-size: 15px; margin-bottom: 8px; }
+  .date { color: #8A8580; font-size: 13px; margin-bottom: 32px; }
+  .brand { color: #E8836B; font-weight: 600; margin-bottom: 8px; }
+  a { color: #E8836B; }
+  .medical-notice { background: #FAEEDA; border-left: 4px solid #EF9F27; padding: 16px; margin: 24px 0; border-radius: 8px; }
+  .medical-notice strong { color: #BA7517; }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #F0E6D8; font-size: 13px; color: #8A8580; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="./index.html">Ana Sayfa</a>
+  <a href="./privacy.html">Gizlilik Politikası</a>
+  <a href="./terms.html">Kullanım Koşulları</a>
+  <span style="float: right;"><a href="./privacy-en.html">English</a></span>
+</nav>
+
+<div class="brand">Koza</div>
+
+<h1>Gizlilik Politikası</h1>
+<div class="subtitle">AI Destekli Bebek Takibi ve Anne Sağlığı</div>
+<div class="date">Son güncellenme: 20 Nisan 2026</div>
+
+<h2>1. Genel Bakış</h2>
+<p>Bu Gizlilik Politikası, Kılınç Labs tarafından geliştirilen ve yayımlanan Koza uygulamasının ("Uygulama") kişisel verilerinizi nasıl topladığını, işlediğini, sakladığını ve koruduğunu açıklar.</p>
+<p>Uygulamayı kullanmaya devam etmeniz, bu politikayı okuduğunuzu ve kabul ettiğinizi gösterir. Politikayı kabul etmiyorsanız lütfen uygulamayı kullanmayınız.</p>
+<p>Koza, 18 yaş ve üzeri ebeveynlere yönelik yapay zeka destekli bebek takibi ve anne sağlığı uygulamasıdır. Uygulama; bebek beslenme, uyku, bez, büyüme, aşı ve milestone takibi; anne sağlığı takibi (ruh hali, kilo, lohusalık, doğum sonrası depresyon taraması); yapay zeka destekli günlük insight, haftalık rapor ve soru-cevap asistanı hizmetleri sunmaktadır.</p>
+
+<div class="medical-notice">
+<strong>Önemli Tıbbi Uyarı:</strong> Koza tıbbi bir cihaz değildir ve tıbbi tavsiye vermez. Uygulama içerisinde yer alan tüm yapay zeka çıktıları, doğum sonrası depresyon tarama sonuçları, büyüme grafikleri, aşı hatırlatıcıları ve sağlık içerikleri yalnızca bilgilendirme amaçlıdır. Bebeğinizin veya kendi sağlığınızla ilgili endişelerinizde lütfen bir sağlık profesyoneline başvurunuz. Acil durumlarda 112'yi arayınız.
+</div>
+
+<h2>2. Veri Sorumlusu</h2>
+<ul>
+<li><strong>Veri Sorumlusu:</strong> Kılınç Labs</li>
+<li><strong>Uygulama Adı:</strong> Koza</li>
+<li><strong>İletişim E-postası:</strong> <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a></li>
+</ul>
+
+<h2>3. Toplanan Kişisel Veriler</h2>
+
+<h3>3.1 Kayıt Sırasında Toplanan Veriler</h3>
+<ul>
+<li>E-posta adresi (yalnızca Apple ile Giriş veya Google ile Giriş üzerinden alınır; Koza ayrı bir e-posta/şifre kaydı gerektirmez)</li>
+<li>Ad veya takma ad (kullanıcı tarafından onboarding sürecinde girilir)</li>
+</ul>
+
+<h3>3.2 Otomatik Olarak Toplanan Veriler</h3>
+<ul>
+<li>Push bildirim token'ı (yalnızca bildirim izni verilmesi halinde)</li>
+<li>Kimlik doğrulama oturumu için Supabase Auth JWT token'ı</li>
+<li>Uygulama hata ve çökme raporları (Sentry aracılığıyla, kişisel veri içermeden)</li>
+</ul>
+<p>Konum bilgisi, kişi listesi, fotoğraf galerisi ve cihaz tanımlayıcıları kesinlikle toplanmaz.</p>
+
+<h3>3.3 Bebek Verileri (Kullanıcı Tarafından Girilen)</h3>
+<p>Aşağıdaki bebek verileri, ebeveyn veya yasal bakıcı tarafından uygulamaya manuel olarak girilir:</p>
+<ul>
+<li>Bebek adı, doğum tarihi, cinsiyet, profil fotoğrafı (isteğe bağlı)</li>
+<li>Beslenme kayıtları (emzirme süresi, taraf, biberon miktarı, katı gıda, süt sağma)</li>
+<li>Uyku kayıtları (başlangıç/bitiş zamanı, uyku kalitesi)</li>
+<li>Bez değişimi kayıtları (tür, zaman)</li>
+<li>Büyüme ölçümleri (boy, kilo, baş çevresi)</li>
+<li>Aşı takvimi kayıtları (yapılan aşılar, yan etkiler, notlar)</li>
+<li>Gelişim milestone'ları (motor, dil, sosyal, bilişsel kategoriler)</li>
+<li>Hastalık kayıtları (tür, ateş, semptomlar, şiddet)</li>
+<li>İlaç kayıtları (ad, dozaj, zaman)</li>
+<li>Ek gıda ve alerji kayıtları</li>
+</ul>
+
+<h3>3.4 Anne Sağlığı Verileri (Kullanıcı Tarafından Girilen)</h3>
+<ul>
+<li>Anne profili (doğum tarihi, doğum tarihi, doğum türü — normal/sezaryen, beslenme yöntemi)</li>
+<li>Ruh hali kayıtları (günlük mood, enerji seviyesi, uyku kalitesi, etiketler)</li>
+<li>Kilo ölçümleri</li>
+<li>Lohusalık/iyileşme kayıtları (vajinal iyileşme, sezaryen yarası, saç dökülmesi, göğüs sağlığı, pelvik taban, duygusal durum vb.)</li>
+<li>Edinburgh Doğum Sonrası Depresyon Ölçeği (EPDS) test yanıtları ve skorları</li>
+</ul>
+
+<h3>3.5 Yapay Zeka Asistan Etkileşim Verileri</h3>
+<ul>
+<li>Yapay zeka asistanına yazılan sorular ve alınan cevaplar (sohbet geçmişi)</li>
+<li>Günlük insight, haftalık rapor ve pediatrist raporu metinleri</li>
+<li>AI tarafından üretilen beslenme ve aktivite önerileri</li>
+</ul>
+
+<h3>3.6 Özel Nitelikli Kişisel Veri Niteliği</h3>
+<p>Bebek ve annenin sağlık verileri (beslenme, uyku, büyüme, aşı, hastalık, ruh hali, depresyon taraması dahil), KVKK'nın 6. maddesi kapsamında "özel nitelikli kişisel veri" olarak kabul edilir. Bu veriler yalnızca kullanıcının açık rızası ile işlenmektedir. Açık rıza, onboarding sürecinde AI Kullanım Onayı ekranı üzerinden alınır ve dilediğiniz zaman geri çekilebilir (bkz. Bölüm 9).</p>
+
+<h2>4. Verilerin İşlenme Amaçları</h2>
+<p>Toplanan veriler yalnızca aşağıdaki amaçlarla işlenmektedir:</p>
+<ul>
+<li><strong>Hizmet sunumu:</strong> Bebek ve anne sağlığı takip işlevlerinin çalıştırılması</li>
+<li><strong>Kişiselleştirme:</strong> Yapay zekanın bebek yaşı, anne lohusalık dönemi ve mevcut kayıtlara göre özel insight üretmesi</li>
+<li><strong>Analitik:</strong> Büyüme persentilleri, uyku trendleri, beslenme pattern'ları ve haftalık rapor hesaplamaları</li>
+<li><strong>Bildirimler:</strong> Aşı hatırlatıcıları, milestone beklentileri, ruh hali kontrol hatırlatıcıları ve haftalık rapor bildirimleri</li>
+<li><strong>Güvenlik:</strong> Hesap doğrulama, yetkisiz erişim engelleme ve veri bütünlüğü</li>
+<li><strong>Partner senkronizasyonu:</strong> Bebek verilerinin ebeveynler arasında paylaşılması (yalnızca kullanıcı tarafından davet edilen eş erişebilir)</li>
+</ul>
+<p>Verileriniz reklam amacıyla kullanılmaz, üçüncü taraf reklam ağlarıyla paylaşılmaz, satılmaz veya pazarlama amaçlı paylaşılmaz.</p>
+
+<h2>5. Verilerin İşlenmesinin Hukuki Dayanağı</h2>
+<p>Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) aşağıdaki hukuki sebepleri kapsamında işlenmektedir:</p>
+<ul>
+<li><strong>KVKK Madde 5/2-c — Sözleşmenin İfası:</strong> Kayıt, kimlik doğrulama ve uygulama hizmetlerinin sunulması amacıyla işlenen veriler.</li>
+<li><strong>KVKK Madde 5/2-f — Meşru Menfaat:</strong> Hizmet kalitesinin iyileştirilmesi ve güvenlik altyapısının korunması amacıyla işlenen veriler.</li>
+<li><strong>KVKK Madde 6/3 — Açık Rıza:</strong> Özel nitelikli kişisel veri (sağlık verisi) işlenmesi ve yapay zeka servisleriyle paylaşılması için gerekli izin. Bu izin onboarding'de alınır ve dilediğiniz zaman geri çekilebilir.</li>
+<li><strong>KVKK Madde 5/1 — Açık Rıza:</strong> Push bildirimleri için gerekli izinler. Uygulama ayarlarından her zaman geri alınabilir.</li>
+</ul>
+
+<h2>6. Üçüncü Taraf Hizmetler</h2>
+<p>Uygulama hizmetlerinin sunulması amacıyla aşağıdaki üçüncü taraf sağlayıcılardan yararlanılmaktadır. Bu sağlayıcılar, yalnızca hizmetin gerektirdiği ölçüde veriye erişebilir ve kendi gizlilik politikalarına tabidir.</p>
+<p>Aşağıda listelenen tüm üçüncü taraf sağlayıcılar — özellikle yapay zeka servis sağlayıcısı Google — bu Gizlilik Politikasında tanımlanan korumayla eşit ya da daha yüksek düzeyde koruma sağlamakla sözleşmesel olarak yükümlüdür. Kılınç Labs, yalnızca bu güvenlik standartlarını karşılayan sağlayıcılarla çalışır.</p>
+
+<h3>6.1 Supabase</h3>
+<p>Altyapı ve veri depolama sağlayıcısı. Tüm kullanıcı verileri Supabase altyapısında tutulmaktadır. Row Level Security (RLS) ile her kullanıcı yalnızca kendi verilerine erişebilir.</p>
+<ul>
+<li>Sunucu konumu: Amerika Birleşik Devletleri</li>
+<li>Gizlilik politikası: <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+</ul>
+
+<h3>6.2 Google Gemini (Yapay Zeka Servisi)</h3>
+<p>Günlük insight, haftalık rapor, soru-cevap asistanı ve beslenme önerileri için kullanılan yapay zeka hizmet sağlayıcısıdır. Koza, Google Gemini API'sine <strong>ücretli Tier 1 planı</strong> üzerinden erişmektedir. Bu plan kapsamında, iletilen veriler Google tarafından model eğitimi için kullanılmaz ve insan incelemesine açılmaz.</p>
+<p>Aşağıdaki veriler Gemini servisine iletilir:</p>
+<ul>
+<li>Bebek yaşı ve mevcut kayıt özetleri (emzirme, uyku, bez, büyüme istatistikleri)</li>
+<li>Anne lohusalık dönemi bilgisi (gün sayısı, doğum türü, beslenme yöntemi)</li>
+<li>AI asistanına yazılan sorular</li>
+<li>Milestone kayıtları (gelişim değerlendirmesi için)</li>
+<li>EPDS test yanıtları (destekleyici feedback üretimi için)</li>
+</ul>
+<p>Gemini'ye e-posta adresiniz, ödeme bilgileriniz veya hesap kimlik bilgileriniz kesinlikle iletilmez. İletilen veriler yalnızca isteğinizi işlemek için kullanılır.</p>
+<ul>
+<li>Sunucu konumu: Amerika Birleşik Devletleri</li>
+<li>Gizlilik politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+</ul>
+
+<h3>6.3 RevenueCat</h3>
+<p>Abonelik ve satın alma yönetimi sağlayıcısı. Kullanıcı kimliği ve App Store / Google Play satın alma bilgileri işlenmektedir.</p>
+<ul>
+<li>Sunucu konumu: Amerika Birleşik Devletleri</li>
+<li>Gizlilik politikası: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+</ul>
+
+<h3>6.4 Apple ve Google (Kimlik Doğrulama)</h3>
+<p>Kayıt ve giriş için kullanılan OAuth sağlayıcıları. Her iki sağlayıcının kendi gizlilik standartları geçerlidir.</p>
+<ul>
+<li>Apple: <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></li>
+<li>Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+</ul>
+
+<h3>6.5 Expo / EAS</h3>
+<p>Uygulama dağıtım altyapısı sağlayıcısı.</p>
+<ul>
+<li>Gizlilik politikası: <a href="https://expo.dev/privacy">expo.dev/privacy</a></li>
+</ul>
+
+<h3>6.6 Sentry</h3>
+<p>Hata ve çökme raporlama sağlayıcısı. Yalnızca anonim hata metadatası iletilir; kişisel veri veya sağlık verisi kesinlikle paylaşılmaz.</p>
+<ul>
+<li>Gizlilik politikası: <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
+</ul>
+
+<h2>7. Uluslararası Veri Transferi</h2>
+<p>Supabase, Google Gemini, RevenueCat ve Sentry sunucuları Amerika Birleşik Devletleri'nde bulunmaktadır. Verileriniz bu nedenle yurt dışına aktarılmaktadır. Bu aktarım, KVKK'nın 9. maddesi kapsamında gerçekleştirilmekte olup gerekli teknik ve idari tedbirler alınmaktadır.</p>
+
+<h2>8. Veri Güvenliği</h2>
+<ul>
+<li>Kimlik doğrulama token'ları (JWT) cihazınızda şifreli olarak saklanmaktadır.</li>
+<li>Uygulama web çerezi kullanmaz.</li>
+<li>Premium üyelik alanları yalnızca sunucu tarafından değiştirilebilir; istemci tarafı doğrudan erişime kapalıdır.</li>
+<li>Supabase Row Level Security (RLS) ile her kullanıcı yalnızca kendi (ve partner sync yaptığı) verilere erişebilir.</li>
+<li>Yapay zeka servisiyle yapılan her çağrı, kullanıcıya ait oturum doğrulaması sonrası gerçekleştirilir.</li>
+<li>EPDS depresyon tarama yanıtları şifrelenmiş JSONB formatında saklanır.</li>
+</ul>
+
+<h2>9. Veri Saklama ve Silme</h2>
+<p>Verileriniz, hesabınız aktif olduğu sürece saklanmaktadır. Hesap silme işlemi kalıcıdır ve geri alınamaz.</p>
+<p>"Hesabı Sil" aksiyonu gerçekleştirildiğinde aşağıdaki tüm veriler kalıcı olarak silinir:</p>
+<ul>
+<li>Profil bilgileri (anne ve bebek)</li>
+<li>Tüm beslenme, uyku, bez, büyüme kayıtları</li>
+<li>Aşı, milestone, hastalık, ilaç kayıtları</li>
+<li>Ek gıda ve alerji kayıtları</li>
+<li>Anne ruh hali, kilo, lohusalık kayıtları</li>
+<li>EPDS depresyon tarama yanıtları ve sonuçları</li>
+<li>AI sohbet geçmişi (soru-cevap konuşmaları)</li>
+<li>Günlük insight ve haftalık rapor kayıtları</li>
+<li>Akıllı hatırlatıcı kayıtları</li>
+<li>Partner sync bağlantıları (eşler ayrı ayrı silinmelidir)</li>
+</ul>
+
+<h3>9.1 Yapay Zeka Onayını Geri Çekme</h3>
+<p>Uygulamaya ilk girişte, verilerinizin Google Gemini yapay zeka servisiyle paylaşılması için açık onay vermeniz istenir (AI Kullanım Onayı ekranı). Uygulamanın temel yapay zeka özellikleri (günlük insight, haftalık rapor, soru-cevap asistanı, milestone değerlendirmesi) bu onaya bağlıdır.</p>
+<p>Onayı geri çekmek için:</p>
+<ul>
+<li><strong>Uygulama içinden:</strong> Uygulamayı açın → <em>Ayarlar → Hesabı Sil</em> yolunu izleyin. Bu işlem hesabınızı ve tüm verilerinizi kalıcı olarak siler, yapay zeka paylaşımını anında durdurur.</li>
+<li><strong>E-posta ile:</strong> Uygulamaya erişiminiz yoksa <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine yazarak hesap silme talebinde bulunabilirsiniz. Talep en geç 30 gün içinde işlenir.</li>
+</ul>
+<p>Hesap silindikten sonra daha önce Google Gemini'ye iletilmiş veriler, Google'ın kendi saklama politikası çerçevesinde silinir (ücretli Tier 1 planında veriler model eğitiminde kullanılmaz).</p>
+
+<h2>10. Bildirimler ve İzinler</h2>
+
+<h3>10.1 Push Bildirimleri</h3>
+<p>Bildirim izni verilmesi halinde aşağıdaki bildirim türleri aktif olur; her biri uygulama ayarlarından ayrı ayrı açılıp kapatılabilir:</p>
+<ul>
+<li>Aşı takvimi hatırlatıcıları</li>
+<li>Milestone beklenti hatırlatıcıları</li>
+<li>Haftalık rapor bildirimi</li>
+<li>Günlük ruh hali kontrol hatırlatıcısı</li>
+<li>Özel hatırlatıcılar (ilaç, doktor randevusu vb.)</li>
+</ul>
+<p>İzin verilmediği sürece push token kaydedilmez ve bildirim gönderilmez.</p>
+
+<h2>11. Çocuk Verisi ve Yaş Sınırı</h2>
+<p>Koza, yalnızca <strong>18 yaş ve üzeri ebeveyn veya yasal bakıcılara</strong> yöneliktir. Uygulama, bebek ve küçük çocuk verilerini takip amacıyla kullanır; ancak bu veriler çocuk tarafından değil, yasal ebeveyn veya bakıcı tarafından girilir.</p>
+<p>Uygulama, COPPA ve KVKK kapsamında 18 yaşından küçük bireylerden doğrudan kişisel veri toplamaz. Kullanıcı, uygulamada kayıt oluştururken 18 yaş üstü olduğunu ve girdiği bebek verilerinin ebeveynlik/bakıcılık yetkisi kapsamında olduğunu kabul eder.</p>
+<p>Bir çocuğun yanlışlıkla kayıt olduğunu fark ederseniz lütfen <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine başvurunuz; söz konusu hesap derhal silinecektir.</p>
+
+<h2>12. Partner (Eş) Senkronizasyonu</h2>
+<p>Koza, bebek verilerini eşler arasında paylaşma imkânı sunar. Bu işlem:</p>
+<ul>
+<li>Yalnızca hesap sahibi tarafından oluşturulan QR kod veya davet kodu ile başlatılır.</li>
+<li>Paylaşılan eş, yalnızca hesap sahibinin izin verdiği bebek verilerine erişir.</li>
+<li>Anne sağlığı verileri (ruh hali, EPDS, lohusalık kayıtları) eşle PAYLAŞILMAZ; yalnızca veri sahibine özeldir.</li>
+<li>Hesap sahibi dilediğinde eş bağlantısını iptal edebilir.</li>
+</ul>
+
+<h2>13. Kullanıcı Hakları (KVKK Madde 11)</h2>
+<p>Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki haklara sahipsiniz:</p>
+<ul>
+<li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+<li>İşlenmişse buna ilişkin bilgi talep etme</li>
+<li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+<li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri öğrenme</li>
+<li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme</li>
+<li>KVKK'nın 7. maddesi çerçevesinde silinmesini veya yok edilmesini isteme</li>
+<li>İşlemeye itiraz etme</li>
+<li>Kanuna aykırı işleme nedeniyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+</ul>
+<p>Taleplerinizi <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine iletebilirsiniz. Talepler, başvuru tarihinden itibaren en geç 30 (otuz) gün içinde sonuçlandırılır.</p>
+
+<h2>14. Veri Doğruluğu ve Sağlık Kararlarının Sorumluluğu</h2>
+<p>Uygulamaya girilen sağlık verilerinin (beslenme zamanları, uyku süreleri, hastalık semptomları, ateş ölçümleri vb.) doğruluğu kullanıcının sorumluluğundadır.</p>
+<p>Yapay zeka tarafından üretilen insight, öneri ve EPDS feedback'leri yalnızca bilgilendirme amaçlıdır; tıbbi tanı, tedavi veya ilaç önerisi niteliği taşımaz. Bebeğinizin veya kendi sağlığınızla ilgili kararlarınız için mutlaka bir pediatrist, jinekolog veya ilgili sağlık profesyoneline danışınız.</p>
+<p>Yanlış veya eksik girilen verilerden üretilen yapay zeka çıktılarına dayanılarak alınan sağlık kararlarının sonuçlarından Kılınç Labs sorumlu tutulamaz.</p>
+
+<h2>15. Kriz Durumları</h2>
+<p>Doğum sonrası depresyon tarama testinde (EPDS) yüksek risk seviyesi tespit edilirse, uygulama sizi aşağıdaki kaynaklara yönlendirir. Bu yönlendirme tıbbi tavsiye değildir; profesyonel destek almanızı teşvik etmek amacıyla yapılır:</p>
+<ul>
+<li><strong>Alo SABİM (182):</strong> Sağlık Bakanlığı İletişim Merkezi — ücretsiz sağlık danışmanlığı</li>
+<li><strong>Acil Durum (112):</strong> Yaşamsal tehlike veya intihar düşüncesi durumunda</li>
+<li><strong>Türkiye Psikiyatri Derneği:</strong> Uzman psikiyatri hekimi yönlendirmesi için</li>
+</ul>
+
+<h2>16. Kayıt ve Hesap Güvenliği</h2>
+<p>Kullanıcı, doğru, eksiksiz ve güncel kayıt bilgileri sağlamakla yükümlüdür. Hesap giriş bilgilerinin (Apple ID, Google hesap) gizliliği tamamen kullanıcının sorumluluğundadır. Hesabınızda yetkisiz bir erişim tespit etmeniz halinde derhal <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine bildiriniz.</p>
+
+<h2>17. Gizlilik Politikası'nda Yapılacak Değişiklikler</h2>
+<p>Kılınç Labs, bu Gizlilik Politikası'nı önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar. Önemli değişiklikler, uygulama içi bildirim veya kayıtlı e-posta adresi aracılığıyla duyurulur. Değişiklikten sonra uygulamayı kullanmaya devam etmeniz, güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<footer>
+<strong>Kılınç Labs</strong> — Koza<br>
+İletişim: <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a><br><br>
+Bu belge 20 Nisan 2026 tarihinde oluşturulmuştur.
+</footer>
+
+</body>
+</html>
