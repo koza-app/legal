@@ -112,7 +112,6 @@
 <li><strong>Analitik:</strong> Büyüme persentilleri, uyku trendleri, beslenme pattern'ları ve haftalık rapor hesaplamaları</li>
 <li><strong>Bildirimler:</strong> Aşı hatırlatıcıları, milestone beklentileri, ruh hali kontrol hatırlatıcıları ve haftalık rapor bildirimleri</li>
 <li><strong>Güvenlik:</strong> Hesap doğrulama, yetkisiz erişim engelleme ve veri bütünlüğü</li>
-<li><strong>Partner senkronizasyonu:</strong> Bebek verilerinin ebeveynler arasında paylaşılması (yalnızca kullanıcı tarafından davet edilen eş erişebilir)</li>
 </ul>
 <p>Verileriniz reklam amacıyla kullanılmaz, üçüncü taraf reklam ağlarıyla paylaşılmaz, satılmaz veya pazarlama amaçlı paylaşılmaz.</p>
 
@@ -186,7 +185,7 @@
 <li>Kimlik doğrulama token'ları (JWT) cihazınızda şifreli olarak saklanmaktadır.</li>
 <li>Uygulama web çerezi kullanmaz.</li>
 <li>Premium üyelik alanları yalnızca sunucu tarafından değiştirilebilir; istemci tarafı doğrudan erişime kapalıdır.</li>
-<li>Supabase Row Level Security (RLS) ile her kullanıcı yalnızca kendi (ve partner sync yaptığı) verilere erişebilir.</li>
+<li>Supabase Row Level Security (RLS) ile her kullanıcı yalnızca kendi verilerine erişebilir.</li>
 <li>Yapay zeka servisiyle yapılan her çağrı, kullanıcıya ait oturum doğrulaması sonrası gerçekleştirilir.</li>
 <li>EPDS depresyon tarama yanıtları şifrelenmiş JSONB formatında saklanır.</li>
 </ul>
@@ -204,7 +203,6 @@
 <li>AI sohbet geçmişi (soru-cevap konuşmaları)</li>
 <li>Günlük insight ve haftalık rapor kayıtları</li>
 <li>Akıllı hatırlatıcı kayıtları</li>
-<li>Partner sync bağlantıları (eşler ayrı ayrı silinmelidir)</li>
 </ul>
 
 <h3>9.1 Yapay Zeka Onayını Geri Çekme</h3>
@@ -234,16 +232,7 @@
 <p>Uygulama, COPPA ve KVKK kapsamında 18 yaşından küçük bireylerden doğrudan kişisel veri toplamaz. Kullanıcı, uygulamada kayıt oluştururken 18 yaş üstü olduğunu ve girdiği bebek verilerinin ebeveynlik/bakıcılık yetkisi kapsamında olduğunu kabul eder.</p>
 <p>Bir çocuğun yanlışlıkla kayıt olduğunu fark ederseniz lütfen <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine başvurunuz; söz konusu hesap derhal silinecektir.</p>
 
-<h2>12. Partner (Eş) Senkronizasyonu</h2>
-<p>Koza, bebek verilerini eşler arasında paylaşma imkânı sunar. Bu işlem:</p>
-<ul>
-<li>Yalnızca hesap sahibi tarafından oluşturulan QR kod veya davet kodu ile başlatılır.</li>
-<li>Paylaşılan eş, yalnızca hesap sahibinin izin verdiği bebek verilerine erişir.</li>
-<li>Anne sağlığı verileri (ruh hali, EPDS, lohusalık kayıtları) eşle PAYLAŞILMAZ; yalnızca veri sahibine özeldir.</li>
-<li>Hesap sahibi dilediğinde eş bağlantısını iptal edebilir.</li>
-</ul>
-
-<h2>13. Kullanıcı Hakları (KVKK Madde 11)</h2>
+<h2>12. Kullanıcı Hakları (KVKK Madde 11)</h2>
 <p>Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki haklara sahipsiniz:</p>
 <ul>
 <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
@@ -257,12 +246,12 @@
 </ul>
 <p>Taleplerinizi <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine iletebilirsiniz. Talepler, başvuru tarihinden itibaren en geç 30 (otuz) gün içinde sonuçlandırılır.</p>
 
-<h2>14. Veri Doğruluğu ve Sağlık Kararlarının Sorumluluğu</h2>
+<h2>13. Veri Doğruluğu ve Sağlık Kararlarının Sorumluluğu</h2>
 <p>Uygulamaya girilen sağlık verilerinin (beslenme zamanları, uyku süreleri, hastalık semptomları, ateş ölçümleri vb.) doğruluğu kullanıcının sorumluluğundadır.</p>
 <p>Yapay zeka tarafından üretilen insight, öneri ve EPDS feedback'leri yalnızca bilgilendirme amaçlıdır; tıbbi tanı, tedavi veya ilaç önerisi niteliği taşımaz. Bebeğinizin veya kendi sağlığınızla ilgili kararlarınız için mutlaka bir pediatrist, jinekolog veya ilgili sağlık profesyoneline danışınız.</p>
 <p>Yanlış veya eksik girilen verilerden üretilen yapay zeka çıktılarına dayanılarak alınan sağlık kararlarının sonuçlarından Kılınç Labs sorumlu tutulamaz.</p>
 
-<h2>15. Kriz Durumları</h2>
+<h2>14. Kriz Durumları</h2>
 <p>Doğum sonrası depresyon tarama testinde (EPDS) yüksek risk seviyesi tespit edilirse, uygulama sizi aşağıdaki kaynaklara yönlendirir. Bu yönlendirme tıbbi tavsiye değildir; profesyonel destek almanızı teşvik etmek amacıyla yapılır:</p>
 <ul>
 <li><strong>Alo SABİM (182):</strong> Sağlık Bakanlığı İletişim Merkezi — ücretsiz sağlık danışmanlığı</li>
@@ -270,10 +259,10 @@
 <li><strong>Türkiye Psikiyatri Derneği:</strong> Uzman psikiyatri hekimi yönlendirmesi için</li>
 </ul>
 
-<h2>16. Kayıt ve Hesap Güvenliği</h2>
+<h2>15. Kayıt ve Hesap Güvenliği</h2>
 <p>Kullanıcı, doğru, eksiksiz ve güncel kayıt bilgileri sağlamakla yükümlüdür. Hesap giriş bilgilerinin (Apple ID, Google hesap) gizliliği tamamen kullanıcının sorumluluğundadır. Hesabınızda yetkisiz bir erişim tespit etmeniz halinde derhal <a href="mailto:koza.ai@proton.me">koza.ai@proton.me</a> adresine bildiriniz.</p>
 
-<h2>17. Gizlilik Politikası'nda Yapılacak Değişiklikler</h2>
+<h2>16. Gizlilik Politikası'nda Yapılacak Değişiklikler</h2>
 <p>Kılınç Labs, bu Gizlilik Politikası'nı önceden bildirimde bulunmaksızın güncelleme hakkını saklı tutar. Önemli değişiklikler, uygulama içi bildirim veya kayıtlı e-posta adresi aracılığıyla duyurulur. Değişiklikten sonra uygulamayı kullanmaya devam etmeniz, güncel politikayı kabul ettiğiniz anlamına gelir.</p>
 
 <footer>
